@@ -21,7 +21,7 @@ class Signuppage extends StatelessWidget {
               Text(
                 "Sign Up",
                 style: TextStyle(
-                  color: Color.fromARGB(255, 182, 2, 2),
+                  color: Color.fromARGB(255, 227, 38, 38),
                   fontWeight: FontWeight.bold,
                   fontSize: 38,
                 ),
@@ -173,7 +173,7 @@ class Signuppage extends StatelessWidget {
                   height: 50,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
-                    color: Color.fromARGB(255, 182, 2, 2),
+                    color: Color.fromARGB(255, 227, 38, 38),
                   ),
                   child: Center(
                     child: Text(
@@ -233,7 +233,7 @@ class Signuppage extends StatelessWidget {
                       child: Text(
                         " Sign In",
                         style: TextStyle(
-                          color: Color.fromARGB(255, 182, 2, 2),
+                          color: Color.fromARGB(255, 227, 38, 38),
                           fontSize: 15.0,
                         ),
                       ),

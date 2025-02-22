@@ -23,7 +23,7 @@ class LogInPage extends StatelessWidget {
               Text(
                 "Login",
                 style: TextStyle(
-                  color: Color.fromARGB(255, 182, 2, 2),
+                  color: Color.fromARGB(255, 227, 38, 38),
                   fontWeight: FontWeight.bold,
                   fontSize: 38,
                 ),
@@ -132,7 +132,7 @@ class LogInPage extends StatelessWidget {
                   height: 50,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
-                    color: Color.fromARGB(255, 182, 2, 2),
+                    color: Color.fromARGB(255, 227, 38, 38),
                   ),
                   child: Center(
                     child: Text(
@@ -170,7 +170,7 @@ class LogInPage extends StatelessWidget {
                     child: Text(
                     " Sign Up",
                     style: TextStyle(
-                      color: Color.fromARGB(255, 182, 2, 2),
+                      color: Color.fromARGB(255, 227, 38, 38),
                       fontSize: 15.0,
                     ),
                                   ),
