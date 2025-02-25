@@ -1,4 +1,6 @@
+import 'package:carbuy_app/widgets/BrandNameRow.dart';
 import 'package:carbuy_app/widgets/DrawerMenu.dart';
+import 'package:carbuy_app/widgets/homenamebar.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -16,7 +18,6 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: _scaffoldKey, // Add the key to Scaffold
-      backgroundColor: Colors.white,
       appBar: AppBar(
         leading: IconButton(
           icon: Image.asset(
@@ -56,8 +57,15 @@ class _HomePageState extends State<HomePage> {
       ),
       drawer: DrawerMenu(), // Use the separate DrawerMenu widget
       body: Column(
-        children: [],
+        children: [
+          SizedBox(
+            height: 20,
+          ),
+          homenamebar(),
+          BrandNameRow(),
+        ],
       ),
     );
   }
 }
+

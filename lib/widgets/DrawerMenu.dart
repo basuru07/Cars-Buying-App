@@ -8,38 +8,77 @@ class DrawerMenu extends StatelessWidget {
       child: ListView(
         padding: EdgeInsets.zero,
         children: <Widget>[
-          DrawerHeader(
-            decoration: BoxDecoration(
-              color: Colors.blue,
-            ),
-            child: Text(
-              'Menu',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 24,
-              ),
-            ),
-          ),
+          SizedBox(height: 150),
           ListTile(
-            leading: Icon(Icons.home),
-            title: Text('Home'),
+            leading: Image.asset("assets/Vector.png"),
+            title: Text(
+              'New Cars',
+              style: TextStyle(fontSize: 28),
+            ),
             onTap: () {
               // Handle Home tap
             },
           ),
           ListTile(
-            leading: Icon(Icons.person),
-            title: Text('Profile'),
+            leading: Image.asset("assets/system-uicons_reuse.png"),
+            title: Text(
+              'Used Cars',
+              style: TextStyle(fontSize: 28),
+            ),
             onTap: () {
-              // Handle Profile tap
+              // Handle Home tap
             },
           ),
           ListTile(
-            leading: Icon(Icons.settings),
-            title: Text('Settings'),
+            leading: Image.asset("assets/tabler_coin-rupee.png"),
+            title: Text(
+              'Sell Cars',
+              style: TextStyle(fontSize: 28),
+            ),
             onTap: () {
-              // Handle Settings tap
+              // Handle Home tap
             },
+          ),
+          ListTile(
+            leading: Image.asset("assets/mdi_set-top-box.png"),
+            title: Text(
+              'Car Accessories',
+              style: TextStyle(fontSize: 28),
+            ),
+            onTap: () {
+              // Handle Home tap
+            },
+          ),
+          ListTile(
+            leading: Image.asset("assets/tabler_credit-card.png"),
+            title: Text(
+              'Car Loan',
+              style: TextStyle(fontSize: 28),
+            ),
+            onTap: () {
+              // Handle Home tap
+            },
+          ),
+          ListTile(
+            leading: Image.asset("assets/tabler_language.png"),
+            title: Text(
+              'Languages',
+              style: TextStyle(fontSize: 28),
+            ),
+            onTap: () {
+              // Handle Home tap
+            },
+          ),
+          SizedBox(height: 90),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Image.asset("assets/ic_baseline-facebook.png"),
+              SizedBox(width: 40),
+              Image.asset("assets/mdi_twitter.png"),
+              SizedBox(width: 40),
+              Image.asset("assets/ph_instagram-logo-bold.png"),
+            ],
           ),
         ],
       ),
