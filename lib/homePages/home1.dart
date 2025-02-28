@@ -1,3 +1,4 @@
+import 'package:carbuy_app/homePages/home2.dart';
 import 'package:carbuy_app/widgets/BrandNameRow.dart';
 import 'package:carbuy_app/widgets/DrawerMenu.dart';
 import 'package:carbuy_app/widgets/homenamebar.dart';
@@ -88,7 +89,16 @@ class _HomePage1State extends State<HomePage1> {
             SizedBox(height: 20),
             homenamebar(), // Fixed naming
             SizedBox(height: 14),
-            Image.asset("assets/Group 68.png"),
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => HomePage2()), // Navigate to Home2
+                );
+              },
+              child: Image.asset("assets/Group 68.png"),
+            ),
             BrandNameRow(),
 
             Row(

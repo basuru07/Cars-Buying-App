@@ -31,23 +31,79 @@ class _HomePage2State extends State<HomePage2> {
                 child: Icon(Icons.share)),
           ],
         ),
-        body: Column(
-          children: [
-            Center(
-              child: Image.asset("assets/mu 1.png"),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(right: 160),
-              child: Text(
+        body: Padding(
+          padding: const EdgeInsets.all(10.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Center(
+                child: Image.asset("assets/mu 1.png"),
+              ),
+              Text(
                 "Ford Mustang GT",
                 style: TextStyle(
                   fontSize: 25,
                   fontWeight: FontWeight.w600,
                 ),
               ),
-            ),
-            
-          ],
+              Row(
+                children: [
+                  Icon(Icons.star, color: Colors.amber, size: 18),
+                  SizedBox(width: 4),
+                  Text(
+                    "4.9",
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                  SizedBox(width: 4),
+                  Text(
+                    "(80 review)",
+                    style: TextStyle(
+                      fontSize: 14,
+                      color: Colors.grey,
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(height: 10),
+              // Description
+              Text(
+                "Mustang is a sports car with very few flaws of one."
+                "Sure it is not perfect, but with that price tag, you"
+                "get a lot of the American muscle for your money",
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.black,
+                ),
+              ),
+              // Read More
+              GestureDetector(
+                onTap: () {
+                  // Navigate or expand text on tap
+                },
+                child: Text(
+                  "Read more....",
+                  style: TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              SizedBox(height: 25),
+              Center(
+                child: Image.asset("assets/Group 107.png"),
+              ),
+
+              SizedBox(height: 60.0),
+              Center(
+                child: Image.asset("assets/Group 109.png"),
+              ),
+               SizedBox(height: 40),
+              Center(child: Image.asset("assets/Group 105.png"))
+            ],
+          ),
         ));
   }
 }
