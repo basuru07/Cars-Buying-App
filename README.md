@@ -45,6 +45,6 @@ CarBuy is a modern **Flutter-based car marketplace** that allows users to explor
 
 1. Clone the repository:
    ```bash
-   https://github.com/basuru07/stylish-eCommerce-app.git
+   https://github.com/basuru07/Cars-Buying-App.git
 
 
