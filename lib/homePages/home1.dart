@@ -3,14 +3,14 @@ import 'package:carbuy_app/widgets/DrawerMenu.dart';
 import 'package:carbuy_app/widgets/homenamebar.dart';
 import 'package:flutter/material.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+class HomePage1 extends StatefulWidget {
+  const HomePage1({super.key});
 
   @override
-  _HomePageState createState() => _HomePageState();
+  _HomePage1State createState() => _HomePage1State();
 }
 
-class _HomePageState extends State<HomePage> {
+class _HomePage1State extends State<HomePage1> {
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
   int _selectedIndex = 0; // Add this for BottomNavigationBar
 
@@ -30,7 +30,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      key: _scaffoldKey, 
+      key: _scaffoldKey,
       appBar: AppBar(
         backgroundColor: Colors.white,
         leading: IconButton(
@@ -68,9 +68,29 @@ class _HomePageState extends State<HomePage> {
       body: SingleChildScrollView(
         child: Column(
           children: [
+            Column(
+              children: [
+                Text(
+                  "Explore",
+                  style: TextStyle(
+                    fontSize: 22,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+                Text(
+                  "The best & favourite car",
+                  style: TextStyle(
+                    fontSize: 15,
+                  ),
+                ),
+              ],
+            ),
             SizedBox(height: 20),
             homenamebar(), // Fixed naming
+            SizedBox(height: 14),
+            Image.asset("assets/Group 68.png"),
             BrandNameRow(),
+
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
@@ -122,7 +142,7 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       bottomNavigationBar: ClipRRect(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(25.0)), 
+        borderRadius: BorderRadius.vertical(top: Radius.circular(25.0)),
         child: BottomNavigationBar(
           items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(
@@ -143,11 +163,11 @@ class _HomePageState extends State<HomePage> {
             ),
           ],
           currentIndex: _selectedIndex,
-          selectedItemColor: Colors.black, 
+          selectedItemColor: Colors.black,
           unselectedItemColor: const Color.fromARGB(255, 91, 91, 91),
           onTap: _onItemTapped,
-          backgroundColor: const Color.fromARGB(255, 245, 244, 244), 
-          type: BottomNavigationBarType.fixed, 
+          backgroundColor: const Color.fromARGB(255, 245, 244, 244),
+          type: BottomNavigationBarType.fixed,
         ),
       ),
     );

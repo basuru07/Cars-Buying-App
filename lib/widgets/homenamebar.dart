@@ -14,10 +14,10 @@ class homenamebar extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           Text(
-            "ALL",
+            "All",
             style: TextStyle(
               fontSize: 18,
-              fontWeight: FontWeight.w400,
+              fontWeight: FontWeight.bold,
             ),
           ),
           Text(
